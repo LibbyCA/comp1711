@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+// do not need to understand function
+// function splits up record into data, time and steps
+
 void tokeniseRecord(const char *input, const char *delimiter,
                     char *date, char *time, char *steps) {
     // Create a copy of the input string as strtok modifies the string
@@ -35,7 +38,7 @@ int main() {
 
     int stepsint;
     
-    tokeniseRecord(record, ",", date, time, steps);
+    tokeniseRecord(record, ",", date, time, steps); // calling function
     
     printf("Date: %s\n", date);
     printf("Time: %s\n", time);
