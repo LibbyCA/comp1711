@@ -14,15 +14,18 @@ int main()
         return 1;
     }
 
-    char *letter;
+    char letter[5];
+    scanf("%s", letter);
+    number = atoi(letter);
+
     int num_lines = 10;
     
     printf("Type %d numbers: ", num_lines);
     
     for (int i = 0; i < num_lines; i++)
     {
-        scanf("%s", letter);
-        fprintf(file, "%s\n", letter);
+        scanf("%d", number);
+        fprintf(file, "%d\n", number);
     }
 
     fclose(file);

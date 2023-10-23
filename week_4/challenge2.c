@@ -24,12 +24,12 @@ int main()
     for (int i = 0; i < num_lines; i++)
     {
         scanf("%d", &number);
-        total = total + number;
+        total += number;
         fprintf(file, "%d\n", number);
     }
 
-    mean = number / 10;
-    printf("The mean is %f",mean);
+    mean = number / num_lines;
+    printf("The mean is %f", mean);
 
     fclose(file);
     return 0;
