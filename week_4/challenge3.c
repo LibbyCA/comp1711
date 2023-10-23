@@ -14,6 +14,7 @@ int main()
         return 1;
     }
 
+    int number;
     char letter[5];
     scanf("%s", letter);
     number = atoi(letter);
