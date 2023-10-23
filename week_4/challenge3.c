@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// calculate mean
+// need to enter 10 letters instead of numbers
 // doesn't work
 
 int main()
@@ -14,22 +14,16 @@ int main()
         return 1;
     }
 
-    int number;
+    char *letter;
     int num_lines = 10;
-    int total = 0;
-    float mean;
     
     printf("Type %d numbers: ", num_lines);
     
     for (int i = 0; i < num_lines; i++)
     {
-        scanf("%d", &number);
-        total = total + number;
-        fprintf(file, "%d\n", number);
+        scanf("%s", letter);
+        fprintf(file, "%s\n", letter);
     }
-
-    mean = number / 10;
-    printf("The mean is %f",mean);
 
     fclose(file);
     return 0;
